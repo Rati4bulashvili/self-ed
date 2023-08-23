@@ -19,7 +19,6 @@
     "@angular/platform-browser-dynamic": "^16.1.7",
     "@angular/router": "^16.1.7",
     "rxjs": "~6.6.0",
-    "tslib": "^2.1.0",
     "zone.js": "~0.13.1"
   },
   "devDependencies": {
@@ -34,6 +33,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "tslib": "^2.6.1",
     "typescript": "~4.9.5"
   }
 }
