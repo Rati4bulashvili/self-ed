@@ -1,0 +1,9 @@
+<h1>dog list</h1>
+
+<div class="dog-list">
+  <app-dog-card
+    *ngFor="let dog of dogs; let i = index"
+    [index]="i"
+    [dog]="dog"
+  ></app-dog-card>
+</div>

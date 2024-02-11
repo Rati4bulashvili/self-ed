@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { DogCardComponent } from './card/dog-card.component';
 
 /**
  * benefits of using standalone components
@@ -8,15 +9,15 @@ import { CommonModule } from '@angular/common';
  */
 
 @Component({
-  selector: 'app-list',
+  selector: 'app-dog-list',
   standalone: true,
-  imports: [CommonModule],
-  templateUrl: './list.component.html',
-  styleUrls: ['./list.component.scss'],
+  imports: [CommonModule, DogCardComponent],
+  templateUrl: './dog-list.component.html',
+  styleUrls: ['./dog-list.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.Emulated
 })
-export class ListComponent {
+export class DogListComponent {
   dogs = [
     { name: 'Bulldog', age: 2, weight: 30 },
     { name: 'corgi', age: 3, weight: 20 },
